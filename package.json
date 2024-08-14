@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "underscore": "^1.13.6"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "chai": "^4.4.1",
+    "jsdom": "^16.7.0",
+    "mocha": "^9.2.2"
+  }
+}

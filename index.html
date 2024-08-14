@@ -1,0 +1,36 @@
+ <!DOCTYPE html>
+ <html lang="en" dir="ltr">
+   <head>
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="style.css">
+     <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
+     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+     <title>Set Game</title>
+   </head>
+   <body>
+     <div class="main">
+       <!-- Game control buttons and informations -->
+       <div id="buttons">
+          <img src="images/logo_small.svg" alt="set logo">
+          <p class="w-100 playerIndicator" id ="glow1">Player 1 Score: <span id="player1Score">0</span> </p>
+          <p class="w-100 playerIndicator" id ="glow2">Player 2 Score: <span id="player2Score">0</span> </p>
+          <p class="w-100">Time: <span id="time">0</span> </p>
+          <div class="spacer"></div>
+          <button id="startButton">Start</button>
+          <button id="clueButton" class="disabled">Hint</button>
+          <button id="answerButton" class="disabled">Reveal Set</button>
+       </div>
+   
+       <!-- Cards area -->
+       <div id="cards">  
+       </div>
+     </div>
+     <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-umd-min.js"></script>
+     <script type="module" src="main.js"></script>
+     <div class="overlay">
+      <div id="winner" class="whowins">Player X Wins!</div>
+      <div class="text-center">Game Over!</div>
+    </div>
+   </body>
+ </html>

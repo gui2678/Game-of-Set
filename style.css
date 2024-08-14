@@ -1,0 +1,187 @@
+/* General styles */
+html{
+  background-color: #1c1c1c;
+  font-family: 'Baloo Chettan', sans-serif;
+}
+img {
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  margin: 0 auto;
+  min-width: 500pt;
+  max-width: 1350px;
+  background-image: url("images/background.jpg");
+  background-repeat: round;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+/* Style for control buttons and infomations */
+#buttons{
+  width: 30%;
+  padding: 17px;
+  padding-bottom: 25%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-image: url("images/blackboard.png");
+  background-repeat: round;
+}
+  #buttons img {
+    width: 40%;
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+  #buttons p {
+    padding-left: 30px;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    color: white;
+    font-size: 25pt;
+    font-weight: 300;
+  }
+  #buttons .spacer {
+    flex-grow: 1;
+  }
+
+/* Style for cards area */
+#cards {
+  background-image: url("images/desk.png");
+  background-repeat: round;
+  float:right;
+  width: 70%;
+  max-width: 500px;
+  padding: 10%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+  #cards img {
+    width: 23%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: transform 0.1s;
+  }
+  #cards img:not(.empty):hover {
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+    transform: scale(1.02); 
+  }
+ 
+  #cards img.highlighted {
+    border: solid 5px #ff6161;
+  }
+
+  #cards img.selected {
+    border: solid 5px #52a3da !important;
+  }
+/* Style for player turn indicator */
+#playerIndicator {
+    margin-top: 10px; 
+    margin-left: 80px;
+    padding: 5px;
+    width: 50%;
+    background-color: red; 
+    color: white;
+    font-size: 16pt; 
+    text-align: center;
+    border-radius: 10px; 
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+}
+/*Style of game over screen*/
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("images/gameover.gif") no-repeat center center;
+  display: none;
+  background-size: cover;
+  z-index: 1000;
+}
+.whowins,
+.text-center {
+  position: absolute;
+  color: white; /* Adjust text color as needed */
+  font-size: 50px; /* Adjust font size as needed */
+  padding: 10px;
+}
+
+.text-center {
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 150px;
+}
+.whowins {
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#gifContainer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1001; /* Ensure it appears above other content */
+}
+
+#bottomGif {
+  max-width: 100%;
+  height: auto;
+}
+/* Styles of Components */
+button{
+  padding:4pt;
+  border-radius: 10pt;
+  background-color: transparent;
+  background-image: url("images/button.png");
+  background-repeat: round;
+}
+button{
+  color: rgb(104, 40, 3);
+  transition: transform 0.1s;
+}
+
+button:hover{
+  transform: scale(1.01); 
+}
+
+button.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+label,input,button{
+  display: block;
+  margin: 10pt;
+  font-size: 20pt;
+  font-family: 'Baloo Chettan', sans-serif;
+}
+.currentPlayer {
+  text-shadow: 0 0 20px #BB0000; 
+}
