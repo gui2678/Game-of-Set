@@ -1,5 +1,12 @@
 # Game-of-Set
 
+## Play the Game
+You can play the game online via this link: https://gui2678.github.io/Game-of-Set/.
+
+## Installation
+Clone the repository:
+ git clone https://github.com/gui2678/Game-of-Set.git
+
 ## Installation
 Clone the repository:
  git clone https://github.com/gui2678/Game-of-Set.git
